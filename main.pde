@@ -1,8 +1,13 @@
-float xKey1, yKey1, widthKey1, heightKey1;
-float xKey2, yKey2, widthKey2, heightKey2;
-float xKey3, yKey3, widthKey3, heightKey3;
-float xKey4, ykey4, widthKey4, heightKey4;
-float xKey5, yKey5, widthKey5, heightKey5;
+
+
+
+int bool1 = 2;
+float[] xKey = new float[bool1], yKey = new float[bool1], widthKey = new float[bool1], heightKey = new float[bool1];
+boolean[] keypressed = new boolean[bool1];
+int[] fill = new int[bool1];
+String[] text1 = new String[bool1];
+
+int b;
 
 void setup(){
   size(500, 500);
@@ -11,276 +16,238 @@ void setup(){
   surface.setLocation(0, 0);
   surface.setTitle("Keyboard layout");
 
-  xKey1 = 10;
-  yKey1 = 10;
-  widthKey1 = 20;
-  heightKey1 = 10;
-
-  xKey2 = 40;
-  yKey2 = 10;
-  widthKey2 = 20; 
-  heightKey2 = 10;
-
-  xKey3 = 70;
-  yKey3 = 10;
-  widthKey3 = 20;
-  heightKey3 = 10;
+  xKey[0] = 10;
+  yKey[0] = 10;
+  widthKey[0] = 30;
+  heightKey[0] = 15;
+  text1[0] = "ESC";
   
-  xKey4 = 100;
-  ykey4 = 10;
-  widthKey4 = 20;
-  heightKey4 = 10;
-  
-  xKey5 = 130;
-  yKey5 = 10;
-  widthKey5 = 20;
-  heightKey5 = 10;
+  xKey[1] = 50;
+  yKey[1] = 10;
+  widthKey[1] = 30;
+  heightKey[1] = 15;
+  text1[1] = "F1";
 }
 
 void draw(){
+  
 }
 
 void keyPressed(){
-  if(keyCode == #04){
-    fill(#FF0000);
-    rect(xKey1, yKey1, widthKey1, heightKey1);
-    noFill();
-  }else{
-    fill(#FFFFFF);
-    rect(xKey1, yKey1, widthKey1, heightKey1);
-    noFill();
-  }
-  if(keyCode == #05){
-    fill(#ff0000);
-    rect(xKey2, yKey2, widthKey2, heightKey2);
-    noFill();
-  }else{
-    fill(ffffff);
-    rect(xKey2, yKey2, widthKwy2, heightKey2);
-    noFill();
-  }
-  if(keyCode == #07){
-    fill(ff0000);
-    rect(xKey3, yKey3, widthKey3, heightKey3);
-    noFill();
-  }else{
-    fill(ffffff);
-    rect(xKey3, yKey3, widthKey3, heightKey3);
-    noFill();
-  }
-  if(keyCode == #08){}
-  if(keyCode == #09){}
-  if(keyCode == #0A){}
-  if(keyCode == #0B){}
-  if(keyCode == #0C){}
-  if(keyCode == #0D){}
-  if(keyCode == #0E){}
-  if(keyCode == #0F){}
-  if(keyCode == #10){}
-  if(keyCode == #11){}
-  if(keyCode == #12){}
-  if(keyCode == #13){}
-  if(keyCode == #14){}
-  if(keyCode == #15){}
-  if(keyCode == #16){}
-  if(keyCode == #17){}
-  if(keyCode == #18){}
-  if(keyCode == #19){}
-  if(keyCode == #1A){}
-  if(keyCode == #1B){}
-  if(keyCode == #1C){}
-  if(keyCode == #1D){}
-  if(keyCode == #1E){}
-  if(keyCode == #1F){}
-  if(keyCode == #20){}
-  if(keyCode == #21){}
-  if(keyCode == #22){}
-  if(keyCode == #23){}
-  if(keyCode == #24){}
-  if(keyCode == #25){}
-  if(keyCode == #26){}
-  if(keyCode == #27){}
-  if(keyCode == #28){}
-  if(keyCode == #29){}
-  if(keyCode == #2A){}
-  if(keyCode == #2B){}
-  if(keyCode == #2C){}
-  if(keyCode == #2D){}
-  if(keyCode == #2E){}
-  if(keyCode == #2F){}
-  if(keyCode == #30){}
-  if(keyCode == #31){}
-  if(keyCode == #32){}
-  if(keyCode == #33){}
-  if(keyCode == #34){}
-  if(keyCode == #35){}
-  if(keyCode == #36){}
-  if(keyCode == #37){}
-  if(keyCode == #38){}
-  if(keyCode == #39){}
-  if(keyCode == #3A){}
-  if(keyCode == #3B){}
-  if(keyCode == #3C){}
-  if(keyCode == #3D){}
-  if(keyCode == #3E){}
-  if(keyCode == #3F){}
-  if(keyCode == #40){}
-  if(keyCode == #41){}
-  if(keyCode == #42){}
-  if(keyCode == #43){}
-  if(keyCode == #44){}
-  if(keyCode == #45){}
-  if(keyCode == #46){}
-  if(keyCode == #47){}
-  if(keyCode == #48){}
-  if(keyCode == #49){}
-  if(keyCode == #4A){}
-  if(keyCode == #4B){}
-  if(keyCode == #4C){}
-  if(keyCode == #4D){}
-  if(keyCode == #4E){}
-  if(keyCode == #4F){}
-  if(keyCode == #50){}
-  if(keyCode == #51){}
-  if(keyCode == #52){}
-  if(keyCode == #53){}
-  if(keyCode == #54){}
-  if(keyCode == #55){}
-  if(keyCode == #56){}
-  if(keyCode == #57){}
-  if(keyCode == #58){}
-  if(keyCode == #59){}
-  if(keyCode == #5A){}
-  if(keyCode == #5B){}
-  if(keyCode == #5C){}
-  if(keyCode == #5D){}
-  if(keyCode == #5E){}
-  if(keyCode == #5F){}
-  if(keyCode == #60){}
-  if(keyCode == #61){}
-  if(keyCode == #62){}
-  if(keyCode == #63){}
-  if(keyCode == #64){}
-  if(keyCode == #65){}
-  if(keyCode == #66){}
-  if(keyCode == #67){}
-  if(keyCode == #68){}
-  if(keyCode == #69){}
-  if(keyCode == #6A){}
-  if(keyCode == #6B){}
-  if(keyCode == #6C){}
-  if(keyCode == #6D){}
-  if(keyCode == #6E){}
-  if(keyCode == #6F){}
-  if(keyCode == #70){}
-  if(keyCode == #71){}
-  if(keyCode == #72){}
-  if(keyCode == #73){}
-  if(keyCode == #74){}
-  if(keyCode == #75){}
-  if(keyCode == #76){}
-  if(keyCode == #77){}
-  if(keyCode == #78){}
-  if(keyCode == #79){}
-  if(keyCode == #7A){}
-  if(keyCode == #7B){}
-  if(keyCode == #7C){}
-  if(keyCode == #7D){}
-  if(keyCode == #7E){}
-  if(keyCode == #7F){}
-  if(keyCode == #80){}
-  if(keyCode == #81){}
-  if(keyCode == #82){}
-  if(keyCode == #83){}
-  if(keyCode == #84){}
-  if(keyCode == #86){}
-  if(keyCode == #86){}
-  if(keyCode == #87){}
-  if(keyCode == #88){}
-  if(keyCode == #89){}
-  if(keyCode == #8A){}
-  if(keyCode == #8B){}
-  if(keyCode == #8C){}
-  if(keyCode == #8D){}
-  if(keyCode == #8E){}
-  if(keyCode == #8F){}
-  if(keyCode == #90){}
-  if(keyCode == #91){}
-  if(keyCode == #92){}
-  if(keyCode == #93){}
-  if(keyCode == #94){}
-  if(keyCode == #95){}
-  if(keyCode == #96){}
-  if(keyCode == #97){}
-  if(keyCode == #98){}
-  if(keyCode == #99){}
-  if(keyCode == #9A){}
-  if(keyCode == #9B){}
-  if(keyCode == #9C){}
-  if(keyCode == #9D){}
-  if(keyCode == #9E){}
-  if(keyCode == #9F){}
-  if(keyCode == #A0){}
-  if(keyCode == #A1){}
-  if(keyCode == #A2){}
-  if(keyCode == #A3){}
-  if(keyCode == #A4){}
-  if(keyCode == #B0){}
-  if(keyCode == #B1){}
-  if(keyCode == #B2){}
-  if(keyCode == #B3){}
-  if(keyCode == #B4){}
-  if(keyCode == #B5){}
-  if(keyCode == #B6){}
-  if(keyCode == #B7){}
-  if(keyCode == #B8){}
-  if(keyCode == #B9){}
-  if(keyCode == #BA){}
-  if(keyCode == #BB){}
-  if(keyCode == #BC){}
-  if(keyCode == #BD){}
-  if(keyCode == #BE){}
-  if(keyCode == #BF){}
-  if(keyCode == #C0){}
-  if(keyCode == #C1){}
-  if(keyCode == #C2){}
-  if(keyCode == #C4){}
-  if(keyCode == #C5){}
-  if(keyCode == #C6){}
-  if(keyCode == #C7){}
-  if(keyCode == #C8){}
-  if(keyCode == #C9){}
-  if(keyCode == #CA){}
-  if(keyCode == #CB){}
-  if(keyCode == #CC){}
-  if(keyCode == #CD){}
-  if(keyCode == #CE){}
-  if(keyCode == #CF){}
-  if(keyCode == #D0){}
-  if(keyCode == #D1){}
-  if(keyCode == #D2){}
-  if(keyCode == #D3){}
-  if(keyCode == #D4){}
-  if(keyCode == #D5){}
-  if(keyCode == #D6){}
-  if(keyCode == #D7){}
-  if(keyCode == #D8){}
-  if(keyCode == #D8){}
-  if(keyCode == #D9){}
-  if(keyCode == #DA){}
-  if(keyCode == #DB){}
-  if(keyCode == #DC){}
-  if(keyCode == #DD){}
-  if(keyCode == #E0){}
-  if(keyCode == #E1){}
-  if(keyCode == #E2){}
-  if(keyCode == #E3){}
-  if(keyCode == #E4){}
-  if(keyCode == #E5){}
-  if(keyCode == #E6){}
-  if(keyCode == #E7){}
+  keypressed[0] = keyCode == 0x04 ? true : false;
+  keypressed[1] = keyCode == 0x05 ? true : false;
+  keypressed[2] = keyCode == 0x07 ? true : false;
+  keypressed[3] = keyCode == 0x08 ? true : false;
+  keypressed[4] = keyCode == 0x09 ? true : false;
+  keypressed[5] = keyCode == 0x0A ? true : false;
+  keypressed[6] = keyCode == 0x0B ? true : false;
+  keypressed[7] = keyCode == 0x0C ? true : false;
+  keypressed[8] = keyCode == 0x0D ? true : false;
+  keypressed[9] = keyCode == 0x0E ? true : false;
+  keypressed[10] = keyCode == 0x0F ? true : false;
+  keypressed[11] = keyCode == 0x10 ? true : false;
+  keypressed[12] = keyCode == 0x11 ? true : false;
+  keypressed[13] = keyCode == 0x12 ? true : false;
+  keypressed[14] = keyCode == 0x13 ? true : false;
+  keypressed[15] = keyCode == 0x14 ? true : false;
+  keypressed[16] = keyCode == 0x15 ? true : false;
+  keypressed[17] = keyCode == 0x16 ? true : false;
+  keypressed[18] = keyCode == 0x17 ? true : false;
+  keypressed[19] = keyCode == 0x18 ? true : false;
+  keypressed[20] = keyCode == 0x19 ? true : false;
+  keypressed[21] = keyCode == 0x1A ? true : false;
+  keypressed[22] = keyCode == 0x1B ? true : false;
+  keypressed[23] = keyCode == 0x1C ? true : false;
+  keypressed[24] = keyCode == 0x1D ? true : false;
+  keypressed[25] = keyCode == 0x1E ? true : false;
+  keypressed[26] = keyCode == 0x1F ? true : false;
+  keypressed[27] = keyCode == 0x20 ? true : false;
+  keypressed[28] = keyCode == 0x21 ? true : false;
+  keypressed[29] = keyCode == 0x22 ? true : false;
+  keypressed[30] = keyCode == 0x23 ? true : false;
+  keypressed[31] = keyCode == 0x24 ? true : false;
+  keypressed[32] = keyCode == 0x25 ? true : false;
+  keypressed[33] = keyCode == 0x26 ? true : false;
+  keypressed[34] = keyCode == 0x27 ? true : false;
+  keypressed[35] = keyCode == 0x28 ? true : false;
+  keypressed[36] = keyCode == 0x29 ? true : false;
+  keypressed[37] = keyCode == 0x2A ? true : false;
+  keypressed[38] = keyCode == 0x2B ? true : false;
+  keypressed[39] = keyCode == 0x2C ? true : false;
+  keypressed[40] = keyCode == 0x2D ? true : false;
+  keypressed[41] = keyCode == 0x2E ? true : false;
+  keypressed[42] = keyCode == 0x2F ? true : false;
+  keypressed[43] = keyCode == 0x30 ? true : false;
+  keypressed[44] = keyCode == 0x31 ? true : false;
+  keypressed[45] = keyCode == 0x32 ? true : false;
+  keypressed[46] = keyCode == 0x33 ? true : false;
+  keypressed[47] = keyCode == 0x34 ? true : false;
+  keypressed[48] = keyCode == 0x35 ? true : false;
+  keypressed[49] = keyCode == 0x36 ? true : false;
+  keypressed[50] = keyCode == 0x37 ? true : false;
+  keypressed[51] = keyCode == 0x38 ? true : false;
+  keypressed[52] = keyCode == 0x39 ? true : false;
+  keypressed[53] = keyCode == 0x3A ? true : false;
+  keypressed[54] = keyCode == 0x3B ? true : false;
+  keypressed[55] = keyCode == 0x3C ? true : false;
+  keypressed[56] = keyCode == 0x3D ? true : false;
+  keypressed[57] = keyCode == 0x3E ? true : false;
+  keypressed[58] = keyCode == 0x3F ? true : false;
+  keypressed[59] = keyCode == 0x40 ? true : false;
+  keypressed[60] = keyCode == 0x41 ? true : false;
+  keypressed[61] = keyCode == 0x42 ? true : false;
+  keypressed[62] = keyCode == 0x43 ? true : false;
+  keypressed[63] = keyCode == 0x44 ? true : false;
+  keypressed[64] = keyCode == 0x45 ? true : false;
+  keypressed[65] = keyCode == 0x46 ? true : false;
+  keypressed[66] = keyCode == 0x47 ? true : false;
+  keypressed[67] = keyCode == 0x48 ? true : false;
+  keypressed[68] = keyCode == 0x49 ? true : false;
+  keypressed[69] = keyCode == 0x4A ? true : false;
+  keypressed[70] = keyCode == 0x4B ? true : false;
+  keypressed[71] = keyCode == 0x4C ? true : false;
+  keypressed[72] = keyCode == 0x4D ? true : false;
+  keypressed[73] = keyCode == 0x4E ? true : false;
+  keypressed[74] = keyCode == 0x4F ? true : false;
+  keypressed[75] = keyCode == 0x50 ? true : false;
+  keypressed[76] = keyCode == 0x51 ? true : false;
+  keypressed[77] = keyCode == 0x52 ? true : false;
+  keypressed[78]= keyCode == 0x53 ? true : false;
+  keypressed[79] = keyCode == 0x54 ? true : false;
+  keypressed[80] = keyCode == 0x55 ? true : false;
+  keypressed[81] = keyCode == 0x56 ? true : false;
+  keypressed[82] = keyCode == 0x57 ? true : false;
+  keypressed[83] = keyCode == 0x58 ? true : false;
+  keypressed[84] = keyCode == 0x59 ? true : false;
+  keypressed[85] = keyCode == 0x5A ? true : false;
+  keypressed[86] = keyCode == 0x5B ? true : false;
+  keypressed[87] = keyCode == 0x5C ? true : false;
+  keypressed[88] = keyCode == 0x5D ? true : false;
+  keypressed[89] = keyCode == 0x5E ? true : false;
+  keypressed[90] = keyCode == 0x5F ? true : false;
+  keypressed[91] = keyCode == 0x60 ? true : false;
+  keypressed[92] = keyCode == 0x61 ? true : false;
+  keypressed[93] = keyCode == 0x62 ? true : false;
+  keypressed[94] = keyCode == 0x63 ? true : false;
+  keypressed[95] = keyCode == 0x64 ? true : false;
+  keypressed[96] = keyCode == 0x65 ? true : false;
+  keypressed[97] = keyCode == 0x66 ? true : false;
+  keypressed[98] = keyCode == 0x67 ? true : false;
+  keypressed[99] = keyCode == 0x68 ? true : false;
+  keypressed[100] = keyCode == 0x69 ? true : false;
+  keypressed[101] = keyCode == 0x6A ? true : false;
+  keypressed[102] = keyCode == 0x6B ? true : false;
+  keypressed[103] = keyCode == 0x6C ? true : false;
+  keypressed[104] = keyCode == 0x6D ? true : false;
+  keypressed[105] = keyCode == 0x6E ? true : false;
+  keypressed[106] = keyCode == 0x6F ? true : false;
+  keypressed[107] = keyCode == 0x70 ? true : false;
+  keypressed[108] = keyCode == 0x71 ? true : false;
+  keypressed[109] = keyCode == 0x72 ? true : false;
+  keypressed[110] = keyCode == 0x73 ? true : false;
+  keypressed[111] = keyCode == 0x74 ? true : false;
+  keypressed[112] = keyCode == 0x75 ? true : false;
+  keypressed[113] = keyCode == 0x76 ? true : false;
+  keypressed[114] = keyCode == 0x77 ? true : false;
+  keypressed[115] = keyCode == 0x78 ? true : false;
+  keypressed[116] = keyCode == 0x79 ? true : false;
+  keypressed[117] = keyCode == 0x7A ? true : false;
+  keypressed[118] = keyCode == 0x7B ? true : false;
+  keypressed[119] = keyCode == 0x7C ? true : false;
+  keypressed[120] = keyCode == 0x7D ? true : false;
+  keypressed[121] = keyCode == 0x7E ? true : false;
+  keypressed[122] = keyCode == 0x7F ? true : false;
+  keypressed[123] = keyCode == 0x80 ? true : false;
+  keypressed[124] = keyCode == 0x81 ? true : false;
+  keypressed[125] = keyCode == 0x82 ? true : false;
+  keypressed[126] = keyCode == 0x83 ? true : false;
+  keypressed[127] = keyCode == 0x84 ? true : false;
+  keypressed[128] = keyCode == 0x86 ? true : false;
+  keypressed[129] = keyCode == 0x86 ? true : false;
+  keypressed[130] = keyCode == 0x87 ? true : false;
+  keypressed[131] = keyCode == 0x88 ? true : false;
+  keypressed[132] = keyCode == 0x89 ? true : false;
+  keypressed[133] = keyCode == 0x8A ? true : false;
+  keypressed[134] = keyCode == 0x8B ? true : false;
+  keypressed[135] = keyCode == 0x8C ? true : false;
+  keypressed[136] = keyCode == 0x8D ? true : false;
+  keypressed[137] = keyCode == 0x8E ? true : false;
+  keypressed[138] = keyCode == 0x8F ? true : false;
+  keypressed[139] = keyCode == 0x90 ? true : false;
+  keypressed[140] = keyCode == 0x91 ? true : false;
+  keypressed[141] = keyCode == 0x92 ? true : false;
+  keypressed[142] = keyCode == 0x93 ? true : false;
+  keypressed[143] = keyCode == 0x94 ? true : false;
+  keypressed[144] = keyCode == 0x95 ? true : false;
+  keypressed[145] = keyCode == 0x96 ? true : false;
+  keypressed[146] = keyCode == 0x97 ? true : false;
+  keypressed[147] = keyCode == 0x98 ? true : false;
+  keypressed[148] = keyCode == 0x99 ? true : false;
+  keypressed[149] = keyCode == 0x9A ? true : false;
+  keypressed[150] = keyCode == 0x9B ? true : false;
+  keypressed[151] = keyCode == 0x9C ? true : false;
+  keypressed[152] = keyCode == 0x9D ? true : false;
+  keypressed[153] = keyCode == 0x9E ? true : false;
+  keypressed[154] = keyCode == 0x9F ? true : false;
+  keypressed[155] = keyCode == 0xA0 ? true : false;
+  keypressed[156] = keyCode == 0xA1 ? true : false;
+  keypressed[157] = keyCode == 0xA2 ? true : false;
+  keypressed[158] = keyCode == 0xA3 ? true : false;
+  keypressed[159] = keyCode == 0xA4 ? true : false;
+  keypressed[160] = keyCode == 0xB0 ? true : false;
+  keypressed[161] = keyCode == 0xB1 ? true : false;
+  keypressed[162] = keyCode == 0xB2 ? true : false;
+  keypressed[163] = keyCode == 0xB3 ? true : false;
+  keypressed[164] = keyCode == 0xB4 ? true : false;
+  keypressed[165] = keyCode == 0xB5 ? true : false;
+  keypressed[166] = keyCode == 0xB6 ? true : false;
+  keypressed[167] = keyCode == 0xB7 ? true : false;
+  keypressed[168] = keyCode == 0xB8 ? true : false;
+  keypressed[169] = keyCode == 0xB9 ? true : false;
+  keypressed[170] = keyCode == 0xBA ? true : false;
+  keypressed[171] = keyCode == 0xBB ? true : false;
+  keypressed[172] = keyCode == 0xBC ? true : false;
+  keypressed[173] = keyCode == 0xBD ? true : false;
+  keypressed[174] = keyCode == 0xBE ? true : false;
+  keypressed[175] = keyCode == 0xBF ? true : false;
+  keypressed[176] = keyCode == 0xC0 ? true : false;
+  keypressed[177] = keyCode == 0xC1 ? true : false;
+  keypressed[178] = keyCode == 0xC2 ? true : false;
+  keypressed[179] = keyCode == 0xC4 ? true : false;
+  keypressed[180] = keyCode == 0xC5 ? true : false;
+  keypressed[181] = keyCode == 0xC6 ? true : false;
+  keypressed[182] = keyCode == 0xC7 ? true : false;
+  keypressed[183] = keyCode == 0xC8 ? true : false;
+  keypressed[184] = keyCode == 0xC9 ? true : false;
+  keypressed[185] = keyCode == 0xCA ? true : false;
+  keypressed[186] = keyCode == 0xCB ? true : false;
+  keypressed[187] = keyCode == 0xCC ? true : false;
+  keypressed[188] = keyCode == 0xCD ? true : false;
+  keypressed[189] = keyCode == 0xCE ? true : false;
+  keypressed[190] = keyCode == 0xCF ? true : false;
+  keypressed[191] = keyCode == 0xD0 ? true : false;
+  keypressed[192] = keyCode == 0xD1 ? true : false;
+  keypressed[193] = keyCode == 0xD2 ? true : false;
+  keypressed[194] = keyCode == 0xD3 ? true : false;
+  keypressed[195] = keyCode == 0xD4 ? true : false;
+  keypressed[196] = keyCode == 0xD5 ? true : false;
+  keypressed[197] = keyCode == 0xD6 ? true : false;
+  keypressed[198] = keyCode == 0xD7 ? true : false;
+  keypressed[199] = keyCode == 0xD8 ? true : false;
+  keypressed[200] = keyCode == 0xD8 ? true : false;
+  keypressed[201] = keyCode == 0xD9 ? true : false;
+  keypressed[202] = keyCode == 0xDA ? true : false;
+  keypressed[203] = keyCode == 0xDB ? true : false;
+  keypressed[204] = keyCode == 0xDC ? true : false;
+  keypressed[205] = keyCode == 0xDD ? true : false;
+  keypressed[206] = keyCode == 0xE0 ? true : false;
+  keypressed[207] = keyCode == 0xE1 ? true : false;
+  keypressed[208] = keyCode == 0xE2 ? true : false;
+  keypressed[209] = keyCode == 0xE3 ? true : false;
+  keypressed[210] = keyCode == 0xE4 ? true : false;
+  keypressed[211] = keyCode == 0xE5 ? true : false;
+  keypressed[212] = keyCode == 0xE6 ? true : false;
+  keypressed[213] = keyCode == 0xE7 ? true : false;
 }
 
-void mousePressed(0{
-
-}
+void mousePressed(){}
